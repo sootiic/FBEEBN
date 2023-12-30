@@ -256,6 +256,18 @@ h6 {
     padding-right: 5px;
 }
 
+@media (max-width: 768px) {
+    .b-g-detail-con, .detail, .tabs{
+        display: block;
+    }
+    .b-d-img, .comment input, .comment textarea{
+        width: 400px;
+    }
+    .tabs{
+        margin-top: 80px;
+    }
+}
+
 /**************************************/
 /********** Back to Top CSS ***********/
 /**************************************/
