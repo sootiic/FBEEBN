@@ -58,7 +58,12 @@ h6 {
 /**************************************/
 
 .blog {
-    background-color: #f3f3f3; 
+    background-color: #f3f3f3;
+    width: 260px; 
+}
+
+.blog h6{
+    padding: 0 10px 0 10px;
 }
 
 .b-img {
@@ -66,13 +71,13 @@ h6 {
 }
 
 .img-b {
-    width: 255px;
-    height: 200px;
+    width: 260px;
+    height: 180px;
 }
 
 .b-con{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     background-color: #f3f3f3;
 }
@@ -108,9 +113,16 @@ h6 {
 }
 
 @media (max-width: 768px) {
-    .row2, .blog{
+    .row2{
         display: block;
         margin-bottom: 30px;
+    }
+    .blog{
+        width: 350px;
+        margin: 0 20px 30px 15px;
+    }
+    .b-con p{
+        padding-left: 10px;
     }
 }
 
@@ -518,6 +530,12 @@ h6 {
     margin-bottom: 30px;
 }
 
+.a-img{
+    height: 500px;
+    width: 1400px;
+    border-radius: 0px;
+}
+
 .about .about-img,
 .single .single-img {
     position: relative;
@@ -586,10 +604,30 @@ h6 {
     position: relative;
     width: 100%;
     padding: 30px 15px;
-    background: #4F84C4;
+    background: #334B85;
 }
 
-.service .service-icon i {
+.service .service-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.bio{
+    border-radius: 50%;
+}
+
+.btn2 {
+    background-color: #4F84C4;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btn2:hover{
+    background-color: #334B85;
+    color: white;
+}
+
+.service .service-icon i{
     font-size: 90px;
     line-height: 0;
     color: #ffffff;
@@ -770,14 +808,25 @@ h6 {
     border-radius: 0;
 }
 
-.pricing .price-btn {
+.pricing .price-btn2 {
     margin-top: 10px;
     margin-bottom: 30px;
-    background: #353535;
+    background: #D3D3D3;
     color: #ffffff;
 }
 
-.pricing .price-btn:hover {
+.pricing .price-btn2:hover {
+    background: #4F84C4;
+}
+
+.pricing .price-btn3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #F79634;
+    color: #ffffff;
+}
+
+.pricing .price-btn3:hover {
     background: #4F84C4;
 }
 
@@ -804,6 +853,30 @@ h6 {
 
 .pricing .features-price .price-plan .price-title {
     color:#ffffff;
+}
+
+@media (max-width: 768px) {
+    .pricing .price-btn2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background: #D3D3D3;
+        color: #ffffff;
+    }
+    
+    .pricing .price-btn2:hover {
+        background: #4F84C4;
+    }
+    
+    .pricing .price-btn3 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background: #F79634;
+        color: #ffffff;
+    }
+    
+    .pricing .price-btn3:hover {
+        background: #4F84C4;
+    }
 }
 
 
@@ -897,6 +970,10 @@ h6 {
     position: relative;
     padding: 90px 0 60px 0;
     background: #f2f2f2;
+}
+
+.p-img{
+    height: 250px;
 }
 
 .portfolio .portfolio-item {
@@ -1069,6 +1146,11 @@ h6 {
     font-weight: 300;
     text-transform: uppercase;
 }
+
+.t-img{
+    height: 250px;
+}
+
 
 
 
